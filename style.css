@@ -95,7 +95,7 @@ body {
   visibility: visible;
 }
 
-.form-control.errors small {
+.form-control.error small {
   color: #e74c3c;
   visibility: visible;
 }

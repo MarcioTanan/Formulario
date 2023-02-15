@@ -18,12 +18,16 @@ function checkInputs(){
 
     if (usernameValue === "") {
       setErrorFor(username, "O nome de usuário é obrigatório.");
-    }
+    } else {
+      setSuccessFor(username);
+}
+
+
 }
 
 function setErrorFor(input, message) {
   const formControl = input.parentElement;
-  const small = formControl.querySelector('small')
+  const small = formControl.querySelector('small');
 
   //Adiciona a mensagem de erro
   small.innerText = message;
